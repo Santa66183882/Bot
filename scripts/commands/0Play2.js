@@ -1,23 +1,16 @@
 module.exports.config = {
-	name: "music",
-	version: "1.0.5",
-	Permssion: 0,
-	credits: "HChong",
+  name: "music", 
+  version: "1.0.0", 
+  permission: 0,
+  credits: "Nayan",
+  description: "example",
   prefix: true,
-	description: "Play music via YouTube link, SoundCloud or search keyword",
-	Category: "media",
-	usages: "[link or content need search]",
-	cooldowns: 10,
-	dependencies: {
-		"ytdl-core": "",
-		"simple-youtube-api": "",
-		"soundcloud-downloader": "",
-		"fs-extra": "",
-		"axios": ""
-	},
-	envConfig: {
-		"YOUTUBE_API": "AIzaSyCqox-KXEwDncsuo2HIpE0MF8J7ATln5Vc",
-		"SOUNDCLOUD_API": "M4TSyS6eV0AcMynXkA3qQASGcOFQTWub"
+  category: "Media", 
+  usages: "user", 
+  cooldowns: 5,
+  dependencies: {
+		"ytdl-core":"",
+    "simple-youtube-api":""
 	}
 };
 
