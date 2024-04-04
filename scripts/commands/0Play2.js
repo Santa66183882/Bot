@@ -1,26 +1,18 @@
 module.exports.config = {
-	name: "play2",
-	version: "1.0.5",
-	Permssion: 0,
-	credits: "HChong",
-	prefix: true,
-	description: "Play music via YouTube link, SoundCloud or search keyword",
-	Category: "media",
-	usages: "[link or content need search]",
-	cooldowns: 10,
-	dependencies: {
-		"ytdl-core": "",
-		"simple-youtube-api": "",
-		"soundcloud-downloader": "",
-		"fs-extra": "",
-		"axios": ""
-	},
-	envConfig: {
-		"YOUTUBE_API": "AIzaSyCbuOQhSRjfdkLOXkhyEo3nzbUHvQRsgkk",
-		"SOUNDCLOUD_API": "M4TSyS6eV0AcMynXkA3qQASGcOFQTWub"
+  name: "song1", 
+  version: "1.0.0", 
+  permission: 0,
+  credits: "Nayan",
+  description: "example",
+  prefix: true,
+  category: "Media", 
+  usages: "user", 
+  cooldowns: 5,
+  dependencies: {
+		"ytdl-core":"",
+    "simple-youtube-api":""
 	}
 };
-
 module.exports.handleReply = async function({ api, event, handleReply }) {
 	const ytdl = global.nodemodule["ytdl-core"];
 	const { createReadStream, createWriteStream, unlinkSync, statSync } = global.nodemodule["fs-extra"];
