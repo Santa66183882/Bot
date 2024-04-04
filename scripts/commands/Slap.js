@@ -3,7 +3,7 @@
 * @warn Do not edit code or edit credits
 */
 
-module.exports.config = {
+module😣.exports.config = {
     name: "slap",
     version: "2.0.0",
     permssion: 2,
