@@ -22,7 +22,7 @@ module.exports.run = async function({ api, event, args }) {
   const request = require("request");
 
   const prompt = args.join(" ");
-  if (!args[0]) return api.sendMessage(`🔰Use ${global.config.PREFIX}${this.config.name} [no.] [text]\n🔰Example:${global.config.PREFIX}${this.config.name} 1 nayan\n\n🔥Total Edit limit 50...`, threadID, messageID);
+  if (!args[0]) return api.sendMessage(`🔰Use ${global.config.PREFIX}${this.config.name} [no.] [text]\n🔰Example:${global.config.PREFIX}${this.config.name} 1 nayan\n\n🔥Total Edit limit 25...`, threadID, messageID);
 
 
   const content = args.join(" ");
@@ -84,6 +84,6 @@ module.exports.run = async function({ api, event, args }) {
     } catch (err) {
    api.setMessageReaction("❌", event.messageID, (err) => {
   }, true);
-    api.sendMessage(`🔰Use ${global.config.PREFIX}${this.config.name} [no.] [text]\n🔰Example:${global.config.PREFIX}${this.config.name} 1 mahabub\n\n🔥Total Edit limit 50...`, event.threadID, event.messageID);  
+    api.sendMessage(`🔰Use ${global.config.PREFIX}${this.config.name} [no.] [text]\n🔰Example:${global.config.PREFIX}${this.config.name} 1 Nayan\n\n🔥Total Edit limit 25...`, event.threadID, event.messageID);  
    }
 };
