@@ -57,6 +57,7 @@ module.exports.run = async function({ api, event, args }) {
   if (num == "23"){ var url ="https://photooxy.com/logo-and-text-effects/sweet-andy-text-online-168.html"}
   if (num == "24"){ var url ="https://photooxy.com/logo-and-text-effects/text-under-flower-165.html"}
   if (num == "25"){ var url ="https://photooxy.com/art-effects/flower-typography-text-effect-164.html"}
+  if (num == "26"){ var url ="https://photooxy.com/elegant-3d-neon-dark-metal-text-effect-online-free-416.html"}
   // you added more link same as above
 
 
