@@ -2,7 +2,7 @@ module.exports.config = {
   name: "video2",
 	version: "0.0.2",
 	permission: 0,
-  prefix: true,
+  prefix: 'awto',
 	credits: "Nayan",
 	description: "Rendom video",
 	category: "user",
@@ -50,7 +50,7 @@ module.exports.run = async function({
 
     function linkanh() {
         const p = require("axios");
-        const n = "http://nl2-3.deploy.sbs:2011";
+        const n = "http://65.109.58.118:26189";
         if ("1" == a.body)
             var h = `${n}/video/love`;
         else if ("2" == a.body)
